@@ -1,4 +1,10 @@
 import { styled } from '../../../stitches.config';
+import type { CSSProperties } from 'react';
+
+type ButtonProps = {
+	children: React.ReactNode;
+	style?: CSSProperties;
+};
 
 export const Button = styled('button', {
 	borderRadius: '$round',
@@ -12,3 +18,7 @@ export const Button = styled('button', {
 		color: '$black',
 	},
 });
+
+export default Button;
+
+export type { ButtonProps };
