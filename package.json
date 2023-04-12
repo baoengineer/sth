@@ -1,8 +1,9 @@
 {
 	"name": "sth-ui",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "bao",
 	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"files": [
 		"dist/**/*"
 	],
@@ -12,8 +13,8 @@
 	},
 	"scripts": {
 		"dev": "next dev",
-		"build": "tsc && rollup -c && next build",
-		"build:lib": "npm run build && cp package.json dist/package.json",
+		"build:docs": "next build",
+		"build:lib": "rollup -c && cp package.json dist/package.json",
 		"start": "next start",
 		"lint": "next lint",
 		"semantic-release": "semantic-release"
