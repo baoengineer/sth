@@ -1,5 +1,6 @@
 const typescript = require('@rollup/plugin-typescript');
 const terser = require('@rollup/plugin-terser');
+const copy = require('rollup-plugin-copy');
 const pkg = require('./package.json');
 
 const config = [
@@ -23,6 +24,12 @@ const config = [
 				tsconfig: 'tsconfig.package.json',
 			}),
 			terser(),
+			copy({
+				targets: [
+					{ src: 'package.j son', dest: 'dist' },
+					{ src: 'README.md', dest: 'dist' },
+				],
+			}),
 		],
 		external: [
 			...Object.keys(pkg.dependencies || {}),
