@@ -1,31 +1,33 @@
 const typescript = require('@rollup/plugin-typescript');
 const terser = require('@rollup/plugin-terser');
+const pkg = require('./package.json');
 
 const config = [
 	{
-		input: 'src/package/index.ts',
+		input: 'src/index.ts',
 		output: [
 			{
-				file: 'dist/sth.js',
-				format: 'esm',
+				name: 'sth',
+				file: pkg.main,
+				format: 'cjs',
 				sourcemap: true,
 			},
 			{
-				file: 'dist/sth.min.js',
+				file: pkg.module,
 				format: 'esm',
 				sourcemap: true,
-				plugins: [terser()],
 			},
 		],
 		plugins: [
 			typescript({
 				tsconfig: 'tsconfig.package.json',
-				declaration: true,
-				declarationDir: 'dist',
-				outDir: 'dist',
 			}),
+			terser(),
 		],
-		external: (id) => !/^[./]/.test(id),
+		external: [
+			...Object.keys(pkg.dependencies || {}),
+			...Object.keys(pkg.peerDependencies || {}),
+		],
 	},
 ];
 
