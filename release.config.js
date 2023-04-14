@@ -20,6 +20,7 @@ module.exports = {
 			{
 				npmPublish: true,
 				files: 'dist/**/*',
+				tarballDir: '.',
 				npmrc:
 					'echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc',
 			},
