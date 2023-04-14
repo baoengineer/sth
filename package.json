@@ -9,6 +9,9 @@
 		"type": "git",
 		"url": "https://github.com/baoidl/sth.git"
 	},
+	"files": [
+		"dist/**"
+	],
 	"scripts": {
 		"dev": "next dev",
 		"build:docs": "next build",
