@@ -1,5 +1,6 @@
 {
 	"name": "sth-ui",
+	"description": "an open-source UI library, built with a design system in mind",
 	"version": "1.2.8",
 	"author": "bao",
 	"main": "dist/index.js",
