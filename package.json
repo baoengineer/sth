@@ -10,7 +10,7 @@
 		"url": "https://github.com/baoidl/sth.git"
 	},
 	"files": [
-		"dist/**"
+		"dist"
 	],
 	"scripts": {
 		"dev": "next dev",

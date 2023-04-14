@@ -1,5 +1,5 @@
 # code editors
-.vscode/
+.vscode
 
 # dependencies
 /node_modules
@@ -15,7 +15,7 @@
 
 # production
 /build
-/dist
+dist
  
 # misc
 .DS_Store
