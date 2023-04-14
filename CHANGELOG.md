@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/baoidl/sth/compare/v1.2.4...v1.2.5) (2023-04-14)
+
+
+### Bug Fixes
+
+* update ([627724d](https://github.com/baoidl/sth/commit/627724d9121af62c3dea284f7f662d73b7470476))
+
 ## [1.2.4](https://github.com/baoidl/sth/compare/v1.2.3...v1.2.4) (2023-04-14)
 
 
