@@ -26,7 +26,8 @@ const config = [
 			terser(),
 			copy({
 				targets: [
-					{ src: 'package.j son', dest: 'dist' },
+					{ src: 'package.json', dest: 'dist' },
+					{ src: 'CHANGELOG.md', dest: 'dist' },
 					{ src: 'README.md', dest: 'dist' },
 				],
 			}),

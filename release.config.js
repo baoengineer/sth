@@ -4,6 +4,7 @@ module.exports = {
 	plugins: [
 		'@semantic-release/commit-analyzer',
 		'@semantic-release/release-notes-generator',
+		'@semantic-release/changelog',
 		[
 			'@semantic-release/github',
 			{
@@ -18,7 +19,7 @@ module.exports = {
 			'@semantic-release/npm',
 			{
 				npmPublish: true,
-				tarballDir: 'dist',
+				files: 'dist/**/*',
 				npmrc:
 					'echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc',
 			},
