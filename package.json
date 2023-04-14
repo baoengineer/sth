@@ -12,6 +12,9 @@
 	"files": [
 		"dist"
 	],
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
 		"dev": "next dev",
 		"build:docs": "next build",
@@ -49,8 +52,5 @@
 		"semantic-release": "^21.0.1",
 		"typescript": "^5.0.4",
 		"vercel": "^28.18.3"
-	},
-	"publishConfig": {
-		"access": "public"
-	}
+	}	
 }

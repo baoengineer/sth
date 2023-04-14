@@ -44,6 +44,9 @@ jobs:
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
           npm ci
 
+      - name: build library
+        run: npm run build:lib
+
       - name: run semantic-release
         run: npx semantic-release --debug
 
