@@ -1,6 +1,6 @@
 {
 	"name": "sth-ui",
-	"version": "1.2.5",
+	"version": "1.2.6",
 	"author": "bao",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
