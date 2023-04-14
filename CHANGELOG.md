@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/baoidl/sth/compare/v1.2.3...v1.2.4) (2023-04-14)
+
+
+### Bug Fixes
+
+* fix include files to npm published package ([4f5311d](https://github.com/baoidl/sth/commit/4f5311ded3202cc24443bf38cc932c7205718b0a))
+
 ## [1.2.3](https://github.com/baoidl/sth/compare/v1.2.2...v1.2.3) (2023-04-14)
 
 
