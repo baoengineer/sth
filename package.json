@@ -1,7 +1,7 @@
 {
 	"name": "sth-ui",
 	"description": "an open-source UI library, built with a design system in mind",
-	"version": "1.2.8",
+	"version": "1.2.9",
 	"author": "bao",
 	"main": "dist/index.js",
 	"module": "dist/index.mjs",
