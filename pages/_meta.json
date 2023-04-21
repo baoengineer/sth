@@ -1,5 +1,6 @@
 {
 	"index": "Intro",
+	"base": "Base",
 	"components": "Components",
 	"about": {
 		"title": "About",

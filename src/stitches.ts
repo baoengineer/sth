@@ -1,11 +1,18 @@
 import { createStitches } from '@stitches/react';
+import { gray } from '@radix-ui/colors';
 
-export const { styled } = createStitches({
+export const { theme, styled } = createStitches({
 	theme: {
 		colors: {
-			black: 'rgba(19, 19, 21, 1)',
-			white: 'rgba(255, 255, 255, 1)',
-			gray: 'rgba(128, 128, 128, 1)',
+			...gray,
+
+			// Backgrounds
+			background: '$gray1',
+			background2: '$gray2',
+
+			// Content
+			content: '$gray12',
+			content2: '$gray11',
 		},
 		fonts: {
 			sans: 'Inter, sans-serif',
