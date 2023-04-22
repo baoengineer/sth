@@ -1,7 +1,23 @@
 {
 	"index": "Intro",
-	"base": "Base",
-	"components": "Components",
+	"usage": "Usage",
+	"config": "Config",
+	"customize": "Customize",
+	"-": {
+    "type": "separator"
+  },
+	"color": "Color",
+	"spacing": "Spacing",
+	"typography": "Typography",
+	"icons": "Icons",
+	"---": {
+    "type": "separator"
+  },
+	"actions": "Actions",
+	"data-display": "Display data",
+	"data-input": "Input data",
+	"layout": "Layout",
+	"navigation": "Navigation",
 	"about": {
 		"title": "About",
 		"type": "page"

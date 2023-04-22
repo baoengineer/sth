@@ -1,0 +1,63 @@
+import { theme } from '@/src/stitches';
+import { colors } from '@/src/variables';
+import { ColorPreview } from '@/app/components';
+
+### Scale
+
+<div>
+	{Object.values(colors.scales).map((token) => {
+		const colorName = token.replace('$', '');
+		const colorObject = theme.colors[colorName];
+		return (
+			<ColorPreview
+				key={colorObject.token}
+				color={colorObject}
+			/>
+		);
+	})}
+</div>
+
+### Backgrounds
+
+<div>
+	{Object.values(colors.backgrounds).map((token) => {
+		const colorName = token.replace('$', '');
+		const colorObject = theme.colors[colorName];
+		return (
+			<ColorPreview
+				key={colorObject.token}
+				color={colorObject}
+			/>
+		);
+	})}
+</div>
+
+### Contents
+
+<div>
+	{Object.values(colors.contents).map((token) => {
+		const colorName = token.replace('$', '');
+		const colorObject = theme.colors[colorName];
+		return (
+			<ColorPreview
+				key={colorObject.token}
+				color={colorObject}
+			/>
+		);
+	})}
+</div>
+
+### Borders
+
+<div>
+	{Object.values(colors.borders).map((token) => {
+		const colorName = token.replace('$', '');
+		const colorObject = theme.colors[colorName];
+		return (
+			<ColorPreview
+				key={colorObject.token}
+				color={colorObject}
+			/>
+		);
+	})}
+</div>

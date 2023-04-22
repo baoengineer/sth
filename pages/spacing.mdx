@@ -1,0 +1,12 @@
+import { theme } from '@/src/stitches';
+import { vars } from '@/src/variables';
+
+### 8px Scale
+
+<div>
+	{Object.values(vars.spaces).map((token) => {
+		const spaceName = token.replace('$', '');
+		const spaceObject = theme.space[spaceName];
+		return <div>{spaceObject.value}</div>;
+	})}
+</div>

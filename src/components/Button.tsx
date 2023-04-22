@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 
 import { styled } from '../stitches';
+import { vars } from '../variables';
 
 interface Props {
 	children: React.ReactNode;
@@ -18,23 +19,23 @@ const Root = styled('button', {
 	variants: {
 		variant: {
 			neutral: {
-				color: '$content',
+				color: vars.colors.content,
 				backgroundColor: 'transparent',
 				'&:hover': {
-					backgroundColor: '$gray4',
+					backgroundColor: vars.colors.scale4,
 				},
 			},
 			accent: {
-				color: '$content',
-				backgroundColor: '$gray3',
+				color: vars.colors.content,
+				backgroundColor: vars.colors.scale3,
 				'&:hover': {
-					backgroundColor: '$gray4',
+					backgroundColor: vars.colors.scale4,
 				},
 				'&:active': {
-					backgroundColor: '$gray5',
+					backgroundColor: vars.colors.scale5,
 				},
 				'&:disabled': {
-					backgroundColor: '$gray2',
+					backgroundColor: vars.colors.scale2,
 				},
 			},
 			danger: {},
