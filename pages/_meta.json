@@ -10,7 +10,7 @@
 	"spacing": "Spacing",
 	"typography": "Typography",
 	"icons": "Icons",
-	"---": {
+	"--": {
     "type": "separator"
   },
 	"actions": "Actions",

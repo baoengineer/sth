@@ -2,6 +2,7 @@ import { createStitches } from '@stitches/react';
 import { grass } from '@radix-ui/colors';
 
 export const { theme, styled } = createStitches({
+	prefix: 'sth',
 	theme: {
 		colors: {
 			...grass,
