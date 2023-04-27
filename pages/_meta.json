@@ -3,16 +3,16 @@
 	"usage": "Usage",
 	"config": "Config",
 	"customize": "Customize",
-	"-": {
-    "type": "separator"
-  },
+	"separator": {
+		"type": "separator"
+	},
 	"color": "Color",
 	"spacing": "Spacing",
 	"typography": "Typography",
 	"icons": "Icons",
-	"--": {
-    "type": "separator"
-  },
+	"separator2": {
+		"type": "separator"
+	},
 	"actions": "Actions",
 	"data-display": "Display data",
 	"data-input": "Input data",

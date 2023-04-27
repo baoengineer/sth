@@ -1,5 +1,17 @@
 :root {
 	--sth-font-family: 'Space Grotesk', sans-serif;
+
+	--sth-letterSpacing-fixed: 1px;
+	--sth-letterSpacing-relative: 0.06em;
+	--sth-letterSpacing-global: calc(
+		var(--sth-letterSpacing-fixed) - var(--sth-letterSpacing-relative)
+	);
+
+	--sth-lineHeight-fixed: 8px;
+	--sth-lineHeight-relative: 0.8em;
+	--sth-lineHeight-global: calc(
+		var(--sth-lineHeight-fixed) + var(--sth-lineHeight-relative)
+	);
 }
 
 *,
@@ -12,6 +24,8 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-family: var(--sth-font-family);
+	letter-spacing: var(--sth-letterSpacing-global);
+	line-height: var(--sth-lineHeight-global);
 }
 
 a {
