@@ -1,6 +1,7 @@
 body.docs {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
 	font-family: var(--sth-font-family);
 	letter-spacing: var(--sth-letterSpacing-global);
 	line-height: var(--sth-lineHeight-global);

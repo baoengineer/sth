@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { styled } from '../../src/stitches';
-import { colord } from 'colord';
+import { vars } from '@/src/variables';
 import { getCSSVarName } from '@/app/helpers';
 
 interface Props {
@@ -14,20 +14,24 @@ const Root = styled('div', {
 	gap: '16px',
 });
 
-export const ColorPreview: FC<Props> = ({ value, token }) => {
+const SizeBox = styled('div', {
+	width: vars.spaces.size24,
+	height: vars.spaces.size24,
+	backgroundColor: vars.colors.scale12,
+});
+
+export const SpacingPreview: FC<Props> = ({ value, token }) => {
 	return (
 		<Root>
-			<div
-				style={{
-					width: '32px',
-					height: '32px',
-					backgroundColor: value,
+			<SizeBox
+				css={{
+					width: value,
+					height: value,
 				}}
 			/>
 			<div>{token}</div>
 			<div>{value}</div>
-			<div>{colord(value).toHex()}</div>
-			<div>{getCSSVarName(token, 'colors')}</div>
+			<div>{getCSSVarName(token, 'space')}</div>
 		</Root>
 	);
 };

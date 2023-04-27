@@ -1,12 +1,17 @@
 import { theme } from '@/src/stitches';
 import { vars } from '@/src/variables';
+import { SpacingPreview } from '@/app/components';
 
-### 8px Scale
+### 8px grid
 
 <div>
-	{Object.values(vars.spaces).map((token) => {
-		const spaceName = token.replace('$', '');
-		const spaceObject = theme.space[spaceName];
-		return <div>{spaceObject.value}</div>;
+	{Object.keys(vars.spaces).map((spaceName) => {
+		const { token, value } = theme.space[spaceName];
+		return (
+			<SpacingPreview
+				token={token}
+				value={value}
+			/>
+		);
 	})}
 </div>
