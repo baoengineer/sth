@@ -1,12 +1,11 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+	reactStrictMode: true,
+};
+
 const withNextra = require('nextra')({
 	theme: 'nextra-theme-docs',
 	themeConfig: './theme-docs.config.js',
 });
 
-const withTM = require('next-transpile-modules')(['@fontsource/space-grotesk']);
-
-module.exports = withTM(
-	withNextra({
-		reactStrictMode: true,
-	})
-);
+module.exports = withNextra(nextConfig);
