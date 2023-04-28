@@ -78,3 +78,5 @@ export const { theme, styled } = createStitches({
 		transitions: {},
 	},
 });
+
+export type Theme = typeof theme;

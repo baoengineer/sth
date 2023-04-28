@@ -1,8 +1,16 @@
-import { theme } from '@/src/stitches';
+import { theme, Theme } from '@/src/stitches';
 
-export const getCSSVarName = (token: string, type: string | number) => {
-	console.log(theme);
-	const tokens = theme[type] || {};
+interface Tokens {
+	[key: string]: {
+		prefix: string;
+		scale: string;
+		token: string;
+		value: string;
+	};
+}
+
+export const getCSSVarName = (token: string, type: keyof Theme) => {
+	const tokens: Tokens = theme[type] || {};
 	const { prefix, scale } = tokens[token] || {};
 	return `--${prefix}-${scale}-${token}`;
 };
