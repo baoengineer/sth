@@ -6,7 +6,7 @@
 		"rootDir": "src",
 		"outDir": "./dist",
 		"lib": ["dom", "dom.iterable", "esnext"],
-		"jsx": "preserve",
+		"jsx": "react",
 		"declarationDir": "types",
 		"declaration": true,
 		"allowJs": true,
