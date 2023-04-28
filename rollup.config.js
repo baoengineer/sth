@@ -1,6 +1,7 @@
 const typescript = require('@rollup/plugin-typescript');
 const terser = require('@rollup/plugin-terser');
 const copy = require('rollup-plugin-copy');
+const postcss = require('rollup-plugin-postcss');
 const pkg = require('./package.json');
 
 const config = [
@@ -30,6 +31,10 @@ const config = [
 					{ src: 'CHANGELOG.md', dest: 'dist' },
 					{ src: 'README.md', dest: 'dist' },
 				],
+			}),
+			postcss({
+				extract: true,
+				minimize: true,
 			}),
 		],
 		external: [
