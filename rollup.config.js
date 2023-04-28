@@ -1,5 +1,5 @@
-const typescript = require('@rollup/plugin-typescript');
-const terser = require('@rollup/plugin-terser');
+const jsx = require('acorn-jsx');
+const typescript = require('rollup-plugin-typescript2');
 const copy = require('rollup-plugin-copy');
 const pkg = require('./package.json');
 
@@ -19,11 +19,11 @@ const config = [
 				sourcemap: true,
 			},
 		],
+		acornInjectPlugins: [jsx()],
 		plugins: [
 			typescript({
 				tsconfig: 'tsconfig.package.json',
 			}),
-			terser(),
 			copy({
 				targets: [
 					{ src: 'package.json', dest: 'dist' },

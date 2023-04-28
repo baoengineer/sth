@@ -1,15 +1,6 @@
-import React, { FC } from 'react';
-
+import { FC } from 'react';
 import { styled } from '../stitches';
 import { vars } from '../variables';
-
-interface Props {
-	children: React.ReactNode;
-	type: 'button' | 'submit' | 'reset';
-	variant: 'neutral' | 'accent' | 'danger';
-	onClick?: () => void;
-	isDisabled: boolean;
-}
 
 const Root = styled('button', {
 	borderColor: 'transparent',
@@ -48,12 +39,20 @@ const Root = styled('button', {
 	},
 });
 
+interface Props {
+	children: React.ReactNode;
+	type: 'button' | 'submit' | 'reset';
+	variant: 'neutral' | 'accent' | 'danger';
+	onClick?: () => void;
+	isDisabled: boolean;
+}
+
 export const Button: FC<Props> = ({
 	children,
-	type,
+	type = 'button',
 	variant = 'neutral',
 	onClick,
-	isDisabled,
+	isDisabled = false,
 }) => {
 	return (
 		<Root
