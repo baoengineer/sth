@@ -30,6 +30,7 @@ const config = [
 					{ src: 'package.json', dest: 'dist' },
 					{ src: 'CHANGELOG.md', dest: 'dist' },
 					{ src: 'README.md', dest: 'dist' },
+					{ src: 'src/styles', dest: 'dist' },
 				],
 			}),
 			postcss({
